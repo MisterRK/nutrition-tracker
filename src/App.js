@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import { Container, Row, Col } from 'react-bootstrap';
+import Lunch from './Lunch';
+import Dinner from './Dinner'
 import './App.css';
+import Breakfast from './Breakfast';
+import AddButtons from './AddButtons';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container>
+        <Row className="top-row">
+          <Col/>
+          <Col/>
+          <Col>
+            <AddButtons/>
+          </Col>
+        </Row>
+        <Row>
+        <h1 className='headers-center'>Breakfast</h1>
+        <Breakfast/>
+        <h1 className='headers-center'>Lunch</h1>
+        <Lunch/>
+        <h1 className='headers-center'>Dinner</h1>
+        <Dinner/>
+        </Row>
+      </Container>
   );
 }
 
