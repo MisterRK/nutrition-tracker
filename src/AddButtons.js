@@ -4,9 +4,9 @@ function AddButtons(){
   return (
     <div>
       <Stack gap={3}>
-        <Button>Hello</Button>
-        <Button>Hello</Button>
-        <Button>Hello</Button>
+        <Button>Add To Breakfast</Button>
+        <Button>Add To Lunch</Button>
+        <Button>Add To Dinner</Button>
       </Stack>
 
     </div>
